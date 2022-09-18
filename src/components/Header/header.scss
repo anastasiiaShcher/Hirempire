@@ -1,0 +1,36 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 165px;
+
+    // background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(39px);
+    color: #FFFFFF;
+
+    display: flex;
+
+    &__logo {
+        padding-right: 170px;
+    }
+
+    &__list {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+
+        list-style-type: none;
+        text-transform: uppercase;
+        font-family: "Gotham Pro";
+        font-weight: 400;
+        font-size: 15px;
+
+        li:hover{
+            cursor: pointer;
+            font-weight: 700;
+        }
+    }
+}

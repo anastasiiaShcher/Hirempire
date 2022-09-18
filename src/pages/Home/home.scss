@@ -1,0 +1,213 @@
+.home-1 {
+  height: 100vh;
+  width: 100%;
+
+  background: url(../../assets/images/main-background.png) no-repeat center
+    center;
+  background-size: cover;
+
+  box-sizing: border-box;
+  padding: 0 165px 120px;
+
+  display: flex;
+  align-items: flex-end;
+
+  .home-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .text-block {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-family: "Gotham Pro";
+      font-weight: 400;
+      font-size: 20px;
+      text-transform: uppercase;
+
+      color: #f1f1f1;
+
+      margin-left: 100px;
+    }
+  }
+}
+
+.home-2 {
+  height: 100vh;
+  width: 100%;
+  padding: 0 165px 180px;
+  box-sizing: border-box;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+
+  background: #f1f1f1;
+
+  .background-img {
+    position: absolute;
+    left: 52px;
+    bottom: 23px;
+  }
+
+  .text-block {
+    z-index: 2;
+    h2 {
+      font-family: "Monument Extended";
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 77px;
+      color: #030608;
+
+      margin-bottom: 11px;
+    }
+
+    p {
+      margin: 0;
+      font-family: "Gotham Pro";
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 52px;
+      color: #1a1b1d;
+    }
+  }
+}
+
+.home-3 {
+  height: 100vh;
+  min-height: 1000px;
+  width: 100%;
+  padding: 145px 165px 180px;
+  box-sizing: border-box;
+
+  position: relative;
+
+  .switch-block {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 130px;
+
+    button {
+      border: none;
+      outline: none;
+      padding: 0 70px;
+      background: none;
+
+      font-family: "Gotham Pro";
+      font-weight: 400;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-underline-offset: 15px;
+
+      cursor: pointer;
+    }
+
+    .active-button {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+
+  .main-text-block {
+    position: relative;
+    height: 372px;
+    margin-bottom: 70px;
+
+    .text-big {
+      font-family: "Monument Extended";
+      font-weight: 400;
+      font-size: 112px;
+      line-height: 124px;
+      text-transform: uppercase;
+    }
+
+    .text-small {
+      font-family: "Gotham Pro";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      text-transform: uppercase;
+    }
+
+    .top-text {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .left-text {
+      position: absolute;
+      top: 136px;
+      right: 610px;
+    }
+
+    .right-text {
+      position: absolute;
+      top: 136px;
+      right: 0;
+      display: inline-block;
+      width: 529px;
+    }
+
+    .bottom-text {
+      position: absolute;
+      top: 272px;
+      right: 0;
+    }
+  }
+
+  .button {
+    position: absolute;
+    padding: 23px 34px;
+    display: block;
+    border-radius: 49px;
+    cursor: pointer;
+
+    font-family: "Gotham Pro";
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 61px;
+    text-transform: uppercase;
+  }
+}
+
+.grey-home {
+  background: #b7babf;
+
+  .switch-block button {
+    color: #000000;
+  }
+
+  .main-text-block .text {
+    color: #1a1b1d;
+  }
+
+  .button {
+    background: rgba(0, 0, 0, 0.2);
+    color: #000000;
+  }
+}
+
+.black-home {
+  background: #2c2c2c;
+
+  .switch-block button {
+    color: #b7babf;
+  }
+
+  .main-text-block .text {
+    color: #b7babf;
+  }
+
+  .button {
+    right: 165px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+}
