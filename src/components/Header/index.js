@@ -1,11 +1,11 @@
 import "./header.scss";
-import logo from "../../assets/images/logo.png";
+import { logo } from "../../imagesContants";
 
-export const Header = () => {
+export const Header = ({ isBlack }) => {
   return (
-    <div className="header">
+    <div className={`${isBlack ? "header header-black" : "header"}`}>
       <a link="#" className="header__logo">
-        <img src={logo} alt="logo"/>
+        <img src={logo} alt="logo" />
       </a>
       <ul className="header__list">
         <li className="header__list-item">

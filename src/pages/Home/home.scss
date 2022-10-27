@@ -79,7 +79,7 @@
 
 .home-3 {
   height: 100vh;
-  min-height: 1000px;
+  min-height: 1060px;
   width: 100%;
   padding: 145px 165px 180px;
   box-sizing: border-box;
@@ -175,6 +175,10 @@
     line-height: 61px;
     text-transform: uppercase;
   }
+
+  .decoration {
+    z-index: 2;
+  }
 }
 
 .grey-home {
@@ -191,6 +195,11 @@
   .button {
     background: rgba(0, 0, 0, 0.2);
     color: #000000;
+  }
+
+  img {
+    position: absolute;
+    right: 165px;
   }
 }
 
@@ -210,4 +219,323 @@
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
   }
+
+  img {
+    position: absolute;
+    left: 165px;
+  }
 }
+
+.home-4 {
+  background: #2c2c2c;
+
+  padding: 190px 165px 25px;
+  box-sizing: border-box;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .main-block {
+    z-index: 2;
+
+    .main-text {
+      margin: 0;
+      padding: 0 0 100px;
+      font-family: "Monument Extended";
+      font-weight: 400;
+      font-size: 64px;
+      text-transform: capitalize;
+
+      color: #b7babf;
+    }
+
+    li {
+      margin: 0 0 100px;
+    }
+
+    .speciality-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .speciality-item {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 0 60px;
+
+        font-family: "Gotham Pro";
+        font-weight: 400;
+        color: #ffffff;
+
+        span {
+          font-size: 20px;
+          line-height: 29px;
+
+          text-transform: uppercase;
+
+          margin-right: 15px;
+        }
+
+        p {
+          margin: 0;
+          font-size: 48px;
+          line-height: 46px;
+          text-transform: capitalize;
+        }
+      }
+
+      .line {
+        display: block;
+        width: 100%;
+        border-top: 2px solid #ffffff;
+      }
+    }
+  }
+}
+
+.home-5 {
+  min-height: 100vh;
+  padding: 180px 165px 170px;
+  box-sizing: border-box;
+  background: #ffffff;
+
+  .main-text {
+    font-family: "Monument Extended";
+    font-weight: 400;
+    font-size: 64px;
+
+    text-transform: capitalize;
+
+    color: #030608;
+
+    margin: 0 0 77px;
+
+    &:last-of-type {
+      margin: 0 0 125px;
+    }
+  }
+
+  .text {
+    font-family: "Gotham Pro";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 36px;
+
+    color: #000000;
+
+    margin: 0 0 90px;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 95px;
+  }
+
+  .hire-btn {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 59px;
+    border: none;
+
+    padding: 25px 34px;
+
+    font-family: "Gotham Pro";
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 61px;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+
+  .road-wrapper {
+    position: relative;
+    width: 1110px;
+    height: 596px;
+    margin: auto;
+
+    .card {
+      position: absolute;
+      width: 635px;
+      height: 369px;
+      padding: 35px 38px;
+      box-sizing: border-box;
+
+      background: #ffffff;
+      border: 1px solid #000000;
+      border-radius: 76px;
+
+      font-family: "Gotham Pro";
+      font-weight: 500;
+      color: #1a1b1d;
+
+      &-number {
+        font-size: 64px;
+        line-height: 64px;
+        text-transform: uppercase;
+
+        margin: 0 0 15px;
+        display: flex;
+        align-items: flex-start;
+
+        .card-name {
+          display: none;
+          font-size: 24px;
+          line-height: 24px;
+
+          margin-left: 25px;
+          padding-top: 8px;
+        }
+      }
+
+      &-text {
+        display: none;
+        padding-top: 21px;
+
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 19px;
+      }
+    }
+
+    .card-1 {
+      top: 0;
+    }
+
+    .card-2 {
+      top: 96px;
+      right: 0;
+
+      z-index: 2;
+    }
+
+    .card-3 {
+      top: 227px;
+      left: 94px;
+
+      z-index: 3;
+    }
+
+    .active-card {
+      background: #b7babf;
+      color: #ffffff;
+
+      transition: color 0.1s linear;
+
+      .card-text,
+      .card-name {
+        display: inline;
+      }
+    }
+
+    .active-card.card-1 {
+      transition: top 0.7s linear;
+      top: -112px;
+    }
+
+    .active-card.card-2 {
+      transition: top 0.7s linear;
+      top: -77px;
+    }
+  }
+}
+
+.home-6 {
+  padding: 152px 165px 108px;
+  background: #1a1b1d;
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+
+    font-family: "Monument Extended";
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #ffffff;
+
+    .open-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      color: black;
+
+      &:hover {
+        color: #a179cf;
+      }
+    }
+  }
+
+  hr {
+    margin-bottom: 65px;
+  }
+
+  .text {
+    margin: 0;
+
+    font-family: "Gotham Pro";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #ffffff;
+  }
+}
+
+.hires-block {
+  width: 100%;
+  background: #2a2a2a;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+
+  .backgroung-img {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1091px;
+    
+  }
+
+  .content-block {
+    position: relative;
+    z-index: 3;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 118px 165px 0;
+    position: relative;
+
+    .article {
+      font-family: "Monument Extended";
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 77px;
+      text-align: end;
+      margin: 0 0 58px;
+
+      color: #030608;
+    }
+
+    .carousel-block-1 {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 90px;
+    }
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+

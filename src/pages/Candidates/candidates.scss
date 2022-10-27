@@ -1,0 +1,246 @@
+.main-page {
+  width: 100%;
+
+  background: url(../../assets/images/candidates-main.png) no-repeat center
+    center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 50px;
+
+  .main-title {
+    padding: 285px 0 0;
+    margin: 0 auto;
+    max-width: 1366px;
+    text-align: center;
+
+    font-family: "Monument Extended";
+    font-weight: 500;
+    font-size: 112px;
+    line-height: 124px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  .main-page-bottom-part {
+    margin: 118px 174px 51px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .text {
+      font-family: "Gotham Pro";
+      font-weight: 500;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #ffffff;
+
+      margin-right: 81px;
+    }
+  }
+}
+
+.find-job-page {
+  background: #ffffff;
+  position: relative;
+
+  .background-text {
+    margin: 0;
+    position: absolute;
+    width: 1179px;
+    height: 420px;
+
+    font-family: "Monument Extended";
+    font-weight: 400;
+    font-size: 101px;
+    line-height: 146px;
+
+    color: #b7babf;
+
+    filter: blur(8.5px);
+
+    &-top {
+      left: 14px;
+      top: 0;
+    }
+
+    &-bottom {
+      top: 380px;
+      right: 0;
+    }
+  }
+
+  .hire-form-wrapper {
+    padding: 177px 165px 275px;
+
+    .hire-form {
+      background: #000000;
+      border-radius: 76px;
+      position: relative;
+      z-index: 2;
+      padding: 38px 0;
+
+      .title {
+        margin: 0 0 57px;
+        text-align: center;
+        font-family: "Monument Extended";
+        font-weight: 400;
+        font-size: 64px;
+
+        color: #ffffff;
+      }
+
+      .input-wrapper {
+        width: 980px;
+        margin: 0 auto 28px;
+        display: flex;
+
+        .vertical-line-wrapper {
+          background: rgba(255, 255, 255, 0.2);
+          display: flex;
+          align-items: center;
+        }
+
+        .vertical-line {
+          display: block;
+          height: 43px;
+          width: 3px;
+
+          background: #000000;
+        }
+
+        .input-item {
+          width: calc(50% - 1.5px);
+          display: flex;
+          flex: 1;
+          background: rgba(255, 255, 255, 0.2);
+          padding: 14px;
+
+          &:first-of-type {
+            border-top-left-radius: 27px;
+            border-bottom-left-radius: 27px;
+          }
+
+          &:last-of-type {
+            border-top-right-radius: 27px;
+            border-bottom-right-radius: 27px;
+          }
+
+          input {
+            padding-left: 15px;
+            height: 26px;
+            width: calc(100% - 26px);
+            background: none;
+            outline: none;
+            border: none;
+
+            font-family: "Gotham Pro";
+            font-weight: 400;
+            font-size: 20px;
+
+            color: rgba(255, 255, 255, 0.3);
+          }
+        }
+      }
+
+      .button-wrapper {
+        width: 980px;
+        margin: 0 auto 28px;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+          padding: 20px 30px;
+
+          border: 1px solid #ffffff;
+          border-radius: 27px;
+          background: none;
+
+          font-family: "Gotham Pro";
+          font-weight: 400;
+          font-size: 20px;
+
+          color: #ffffff;
+
+          transition: 0.5s;
+
+          &:hover {
+            cursor: pointer;
+            background: #fff;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.candidates-text-block {
+  background: #fff;
+  padding: 255px 0;
+  max-width: 1113px;
+  margin: 0 auto;
+  position: relative;
+
+  .main-text {
+    margin: 0;
+    font-family: "Monument Extended";
+    font-weight: 500;
+    font-size: 103px;
+    line-height: 136px;
+
+    text-transform: uppercase;
+
+    color: #000000;
+
+    &-right {
+      position: relative;
+      left: 300px;
+    }
+  }
+
+  .hire-link {
+    font-family: "Gotham Pro";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    text-underline-offset: 7px;
+    text-decoration: underline;
+
+    position: relative;
+    bottom: 60px;
+
+    transition: 0.5s;
+
+    &:hover {
+      color: #a179cf;
+    }
+  }
+
+  .additional-text {
+    position: absolute;
+    margin: 0;
+
+    font-family: "Gotham Pro";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #1a1b1d;
+
+    &-first {
+      width: 727px;
+      top: 418px;
+      left: 382px;
+    }
+
+    &-second {
+      width: 411px;
+      top: 543px;
+      left: 700px;
+    }
+  }
+}

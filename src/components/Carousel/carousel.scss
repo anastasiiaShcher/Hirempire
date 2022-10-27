@@ -1,0 +1,48 @@
+.carousel-wrap {
+  width: 680px;
+  display: block;
+}
+
+.carousel {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-seat {
+  height: 252px;
+  width: 316px;
+  // margin-left: 40px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  .carousel-item__image {
+    width: 315px;
+    height: 156px;
+
+    margin-bottom: 23px;
+
+    background: white;
+  }
+
+  .carousel-item__company {
+    height: 34px;
+    margin-bottom: 23px;
+  }
+
+  .carousel-item__description {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "Gotham Pro";
+    font-size: 16px;
+    line-height: 15px;
+    margin: 0;
+
+    color: #000000;
+  }
+}

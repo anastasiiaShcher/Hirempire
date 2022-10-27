@@ -1,0 +1,135 @@
+.contact-block {
+  display: flex;
+
+  .left-side {
+    position: relative;
+    width: 690px;
+    background: #b7babf;
+
+    .left-side-image {
+      width: 690px;
+    }
+
+    .text-block {
+      padding-left: 165px;
+
+      font-family: "Gotham Pro";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 19px;
+
+      color: #ffffff;
+
+      span {
+        display: block;
+        margin-bottom: 43px;
+
+        a {
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .right-side {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+
+    padding: 0 165px 75px 65px;
+
+    font-family: "Gotham Pro";
+    color: #000000;
+
+    .main-article {
+      position: absolute;
+      top: 135px;
+      left: 65px;
+      margin: 0;
+      max-width: calc(100% - 65px);
+      overflow-x: hidden;
+
+      font-family: "Monument Extended";
+      font-weight: 400;
+      font-size: 134px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .form {
+      margin-top: 330px;
+      width: 100%;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 15px;
+
+      input {
+        background: none;
+        font-size: 14px;
+        font-weight: 400;
+
+        width: 100%;
+        height: 30px;
+        margin-bottom: 35px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid #000000;
+        outline: none;
+      }
+
+      .btn-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 115px;
+      }
+    }
+
+    .link-block {
+      .link-list {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+
+        li a {
+          font-weight: 500;
+          font-size: 20px;
+          text-decoration: none;
+
+          color: #000000;
+
+          &:hover {
+            transition: 0.5s;
+            // text-decoration: underline;
+            color: #A179CF;
+          }
+        }
+      }
+    }
+  }
+
+  &-grey {
+    .left-side {
+      background: #ffffff;
+
+      .text-block,
+      .text-block span a {
+        color: #000000;
+      }
+    }
+
+    .right-side {
+      background: #B7BABF;
+
+      .form .btn-wrapper button {
+        background: #FFFFFF;
+      }
+    }
+  }
+}
