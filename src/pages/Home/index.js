@@ -26,7 +26,7 @@ export const Home = () => {
 
   return (
     <>
-      <div className="home-1">
+      <div className="home-main">
         <Header isBlack={false}/>
         <div className="home-bottom">
           <ScrollButton refVariable={ref} />
@@ -40,7 +40,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="home-2" ref={ref}>
+      <div className="about-us-block" ref={ref}>
         <img
           src={backgroundHome2}
           alt="background-text"
@@ -57,7 +57,7 @@ export const Home = () => {
           </p>
         </div>
       </div>
-      <div className={`home-3 ${lookingTalent ? "grey-home" : "black-home"}`}>
+      <div className={`home-looking ${lookingTalent ? "grey-home" : "black-home"}`}>
         <div className="switch-block">
           <button
             className={`${lookingTalent && "active-button"}`}
@@ -89,7 +89,7 @@ export const Home = () => {
           <img src={imgBlack} alt="decoration" className="decoration" />
         )}
       </div>
-      <div className="home-4">
+      <div className="home-focus">
         <img src={backgroundHome4} alt="background" />
         <div className="main-block">
           <h2 className="main-text">Our focus:</h2>
@@ -146,7 +146,7 @@ export const Home = () => {
           </ul>
         </div>
       </div>
-      <div className="home-5">
+      <div className="home-companies">
         <h2 className="main-text">Companies</h2>
         <p className="text">
           Hirempire - a trusted recruitment partner for all your professional
@@ -204,7 +204,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="home-6">
+      <div className="home-talents">
         <div className="page-header">
           <span>Talents</span>
           <button

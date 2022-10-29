@@ -57,7 +57,7 @@ export const Candidates = () => {
         <p className="main-text">bird</p>
         <p className="main-text">catches</p>
         <p className="main-text main-text-right">the worm</p>
-        <a className="hire-link" href="#">
+        <a className="hire-link">
           more hire option
         </a>
         <p className="additional-text additional-text-first">

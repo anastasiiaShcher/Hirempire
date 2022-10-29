@@ -24,14 +24,20 @@
     list-style-type: none;
     text-transform: uppercase;
     font-family: "Gotham Pro";
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
 
-    li:hover {
+    li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    li:hover a {
       transition: 0.5s;
 
       cursor: pointer;
-      color: #a179cf;
+      // color: #a179cf;
+      color: black;
     }
   }
 }

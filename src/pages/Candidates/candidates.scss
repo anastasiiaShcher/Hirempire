@@ -1,5 +1,6 @@
 .main-page {
   width: 100%;
+  overflow-x: hidden;
 
   background: url(../../assets/images/candidates-main.png) no-repeat center
     center;
@@ -196,6 +197,7 @@
     &-right {
       position: relative;
       left: 300px;
+      width: fit-content;
     }
   }
 

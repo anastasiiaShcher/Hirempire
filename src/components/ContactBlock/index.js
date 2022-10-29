@@ -1,5 +1,5 @@
-import "./contact-block.scss";
 import { contactBlockImg, logoSmall } from "../../imagesContants";
+import "./contact-block.scss";
 
 export const ContactBlock = ({ isRightGrey }) => (
   <div
@@ -43,13 +43,13 @@ export const ContactBlock = ({ isRightGrey }) => (
             <img src={logoSmall} alt="logo" />
           </li>
           <li>
-            <a href="#">Instagram</a>
+            <a href="/">Instagram</a>
           </li>
           <li>
-            <a href="#">Facebook</a>
+            <a href="/">Facebook</a>
           </li>
           <li>
-            <a href="#">Linkedin</a>
+            <a href="/">Linkedin</a>
           </li>
         </ul>
       </div>

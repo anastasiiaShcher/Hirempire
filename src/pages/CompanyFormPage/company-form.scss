@@ -1,0 +1,262 @@
+.candidates-form-wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+
+  background: #ffffff;
+
+  .candidates-form {
+    width: 1127px;
+    margin: 0 auto;
+
+    font-family: "Gotham Pro";
+
+    .title-wrapper {
+      padding-top: 260px;
+      padding-bottom: 115px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .main-text {
+        margin: 0;
+        font-family: "Monument Extended";
+        font-weight: 500;
+        font-size: 64px;
+
+        color: #030608;
+      }
+
+      .text {
+        width: 544px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+
+        color: #1a1b1d;
+      }
+    }
+
+    .form {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 64px;
+      margin-bottom: 115px;
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+
+      color: #000000;
+
+      input {
+        font-family: "Gotham Pro";
+        box-sizing: border-box;
+        margin: 0 10px;
+        font-size: 20px;
+        line-height: 27px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #000000;
+        text-align: center;
+        overflow: hidden;
+
+        ::placeholder {
+          color: #b7babf;
+        }
+      }
+
+      &-name {
+        width: 200px;
+      }
+
+      &-company-name {
+        width: 250px;
+      }
+
+      &-location {
+        width: 185px;
+      }
+
+      &-zip-code {
+        width: 200px;
+      }
+
+      &-email {
+        width: 500px;
+      }
+
+      .form-new-line {
+        margin-top: 70px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        textarea {
+          display: block;
+          resize: none;
+          width: 100%;
+          font-family: "Gotham Pro";
+
+          box-sizing: border-box;
+          font-size: 20px;
+          line-height: 64px;
+          outline: none;
+          border: none;
+          // border-bottom: 1px solid #000000;
+
+          // line-height: 4ch;
+          background-image: linear-gradient(
+            transparent,
+            transparent calc(64px - 1px),
+            #000000 0px
+          );
+          background-size: 100% 64px;
+
+          &::placeholder {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .candidates-form-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 1127px;
+    margin: 0 auto 130px;
+
+    button {
+      font-family: "Gotham Pro";
+      font-weight: 500;
+      font-size: 64px;
+      text-transform: uppercase;
+
+      color: #000000;
+
+      padding: 20px 30px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 49px;
+      border: none;
+
+      &:hover {
+        transition: 0.1s;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+
+      :hover {
+        cursor: pointer;
+      }
+
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      input:checked ~ .checkmark {
+        background: none;
+      }
+
+      .checkmark {
+        border: 1px solid #000000;
+        border-radius: 2px;
+        margin-right: 8px;
+        box-sizing: border-box;
+
+        width: 20px;
+        height: 20px;
+        background: none;
+
+        &:hover {
+          background: #ccc;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+
+          left: 7px;
+          top: 2.5px;
+          width: 4px;
+          height: 9px;
+          border: solid black;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+
+      span {
+        width: 445px;
+        font-family: "Gotham Pro";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        color: #4f4f4f;
+      }
+    }
+  }
+
+  .candidates-info {
+    width: 1127px;
+    margin: 0 auto 214px;
+
+    .horizontal-line {
+      display: block;
+      content: "";
+      border-bottom: 2px solid #000000;
+      margin-bottom: 35px;
+    }
+
+    .info-list {
+      display: flex;
+      justify-content: space-between;
+
+      .info-item {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-family: "Monument Extended";
+          font-weight: 400;
+          font-size: 24px;
+
+          text-align: center;
+          color: #000000;
+        }
+
+        span {
+          width: 305px;
+
+          text-align: center;
+          font-family: "Gotham Pro";
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+
+          color: #4f4f4f;
+        }
+      }
+    }
+  }
+}

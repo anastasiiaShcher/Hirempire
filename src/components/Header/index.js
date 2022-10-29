@@ -1,21 +1,23 @@
+import { Link } from "react-router-dom";
+
 import "./header.scss";
 import { logo } from "../../imagesContants";
 
 export const Header = ({ isBlack }) => {
   return (
     <div className={`${isBlack ? "header header-black" : "header"}`}>
-      <a link="#" className="header__logo">
+      <Link to="/" className="header__logo">
         <img src={logo} alt="logo" />
-      </a>
+      </Link>
       <ul className="header__list">
         <li className="header__list-item">
-          <a link="">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li className="header__list-item">
-          <a link="">companies</a>
+          <Link to="/company">companies</Link>
         </li>
         <li className="header__list-item">
-          <a link="">candidates</a>
+          <Link to="/candidate">candidates</Link>
         </li>
         <li className="header__list-item">
           <a link="">account</a>
