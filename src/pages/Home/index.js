@@ -1,9 +1,10 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Header } from "../../components/Header";
 import { Carousel } from "../../components/Carousel";
 import { ScrollButton } from "../../components/ScrollBtn";
 import { ContactBlock } from "../../components/ContactBlock";
 import { TalentsList } from "../../components/TalentsList";
+import { HomeCompaniesBlock } from "../../components/HomeCompaniesBlock";
 import {
   backgroundHome2,
   imgBlack,
@@ -17,17 +18,12 @@ export const Home = () => {
   const ref = useRef(null);
 
   const [lookingTalent, setLookingTalent] = useState(true);
-  const [activeCard, setActiveCard] = useState(1);
   const [hideTalents, setHideTalents] = useState(true);
-
-  const handleClickOnCard = (cardNumber) => {
-    setActiveCard(cardNumber);
-  };
 
   return (
     <>
       <div className="home-main">
-        <Header isBlack={false}/>
+        <Header isBlack={false} />
         <div className="home-bottom">
           <ScrollButton refVariable={ref} />
           <div className="text-block">
@@ -57,7 +53,9 @@ export const Home = () => {
           </p>
         </div>
       </div>
-      <div className={`home-looking ${lookingTalent ? "grey-home" : "black-home"}`}>
+      <div
+        className={`home-looking ${lookingTalent ? "grey-home" : "black-home"}`}
+      >
         <div className="switch-block">
           <button
             className={`${lookingTalent && "active-button"}`}
@@ -146,64 +144,7 @@ export const Home = () => {
           </ul>
         </div>
       </div>
-      <div className="home-companies">
-        <h2 className="main-text">Companies</h2>
-        <p className="text">
-          Hirempire - a trusted recruitment partner for all your professional
-          placement needs.{" "}
-        </p>
-        <div className="btn-wrapper">
-          <button className="hire-btn">Hire Talent</button>
-        </div>
-        <h2 className="main-text">Road map</h2>
-        <div className="road-wrapper">
-          <div
-            onClick={() => handleClickOnCard(1)}
-            className={`card card-1 ${activeCard === 1 ? "active-card" : ""}`}
-          >
-            <div className="card-number">
-              01 <span className="card-name">Acquaintance.</span>
-            </div>
-            <hr />
-            <p className="card-text">
-              Meeting with the client, discussing the details of the request.
-              The Recruitment Department presents a prediction of possible
-              results and risks. Signing the contract and filling out an
-              application for the search for a candidate.
-            </p>
-          </div>
-          <div
-            onClick={() => handleClickOnCard(2)}
-            className={`card card-2 ${activeCard === 2 ? "active-card" : ""}`}
-          >
-            <div className="card-number">
-              02 <span className="card-name">Acquaintance.</span>
-            </div>
-            <hr />
-            <p className="card-text">
-              Selection of the candidates and verification of their compliance
-              with the requirements of the vacancy. Pre-screen interviews with
-              our recruiters. Sending CVs of the candidates with feedback from
-              our recruiters. Organization of interviews, test tasks. Keeping in
-              touch with candidates and providing feedback to the client.
-            </p>
-          </div>
-          <div
-            onClick={() => handleClickOnCard(3)}
-            className={`card card-3 ${activeCard === 3 ? "active-card" : ""}`}
-          >
-            <div className="card-number">
-              03 <span className="card-name">Job offer.</span>
-            </div>
-            <hr />
-            <p className="card-text">
-              Accompanying the candidate up to the first working day and during
-              probation period. After the successful start of the candidate's
-              work, the client pays for the company's services.
-            </p>
-          </div>
-        </div>
-      </div>
+      <HomeCompaniesBlock />
       <div className="home-talents">
         <div className="page-header">
           <span>Talents</span>

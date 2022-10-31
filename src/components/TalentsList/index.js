@@ -17,6 +17,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
+    id: '1'
   },
   {
     sphere: "Finance & Accounting",
@@ -25,6 +26,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
+    id: '2'
   },
   {
     sphere: "Finance & Accounting",
@@ -33,6 +35,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
+    id: '3'
   },
   {
     sphere: "Finance & Accounting",
@@ -41,6 +44,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
+    id: '4'
   },
   {
     sphere: "Finance & Accounting",
@@ -49,6 +53,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
+    id: '5'
   },
   {
     sphere: "Legal",
@@ -57,6 +62,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
+    id: '6'
   },
 ];
 
@@ -67,7 +73,7 @@ export const TalentsList = ({ isHide }) => {
     const result = candidates
       .filter((candidate) => candidate.sphere === activeTitle)
       .map((candidate) => (
-        <div className="candidate">
+        <div className="candidate" key={candidate.id}>
           <div className="image"></div>
           <div className="info-block">
             <p className="info-title">{candidate.title}</p>

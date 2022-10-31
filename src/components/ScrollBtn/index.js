@@ -8,24 +8,19 @@ export const ScrollButton = ({ refVariable }) => {
   return (
     <button className="scroll-btn" onClick={handleClick}>
       <svg
-        width="115"
-        height="115"
-        viewBox="0 0 115 115"
+        width="70"
+        height="70"
+        viewBox="0 0 70 70"
+        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="57.5" cy="57.5" r="57.5" fill="#F1F1F1" />
+        <circle cx="35" cy="35" r="35" fill="#F1F1F1" />
         <path
-          d="M44.2085 67.3071L57.9014 81L71.7793 67.1221"
+          d="M26.9095 40.9695L35.2443 49.3044L43.6917 40.8569"
           stroke="currentColor"
           strokeWidth="2"
-          fill="none"
         />
-        <path
-          d="M57.9014 81V34"
-          stroke="currentColor"
-          strokeWidth="2"
-          fill="none"
-        />
+        <path d="M35.2443 49.3044V20.6957" stroke="currentColor" strokeWidth="2" />
       </svg>
     </button>
   );
