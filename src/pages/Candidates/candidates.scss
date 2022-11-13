@@ -1,5 +1,7 @@
 .main-page {
   width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
   overflow-x: hidden;
 
   background: url(../../assets/images/candidates-main.png) no-repeat center
@@ -9,7 +11,12 @@
   padding-bottom: 50px;
 
   .main-title {
-    padding: 285px 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
     margin: 0 auto;
     max-width: 1366px;
     text-align: center;
@@ -24,7 +31,10 @@
   }
 
   .main-page-bottom-part {
-    margin: 118px 174px 51px 0;
+    position: absolute;
+    bottom: 50px;
+    right: 174px;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -50,7 +60,7 @@
     min-height: 100vh;
 
     .main-title {
-      padding: 205px 15px 0;
+      padding: 0 15px;
       max-width: 100%;
 
       font-size: 48px;
@@ -58,7 +68,11 @@
     }
 
     .main-page-bottom-part {
-      margin: 147px 15px 0;
+      padding: 0 15px;
+      bottom: 30px;
+      right: initial;
+      width: calc(100% - 30px);
+
       justify-content: space-between;
 
       .text {
