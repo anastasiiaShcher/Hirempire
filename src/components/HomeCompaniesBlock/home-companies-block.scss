@@ -1,146 +1,217 @@
 .home-companies {
-    min-height: 100vh;
-    padding: 180px 165px 170px;
-    box-sizing: border-box;
-    background: #ffffff;
-  
-    .main-text {
-      font-family: "Monument Extended";
-      font-weight: 400;
-      font-size: 64px;
-      color: #030608;
-  
-      margin: 0 0 77px;
-  
-      &:last-of-type {
-        margin: 0 0 125px;
-      }
+  min-height: 100vh;
+  padding: 180px 165px 170px;
+  box-sizing: border-box;
+  background: #ffffff;
+
+  .main-text {
+    font-family: "Monument Extended";
+    font-weight: 400;
+    font-size: 64px;
+    color: #030608;
+
+    margin: 0 0 77px;
+
+    &:last-of-type {
+      margin-bottom: 125px;
     }
-  
-    .text {
-      font-family: "Gotham Pro";
-      font-weight: 400;
-      font-size: 40px;
-      line-height: 36px;
-  
-      color: #000000;
-  
-      margin: 0 0 90px;
-    }
-  
-    .btn-wrapper {
-      display: flex;
-      width: 100%;
-      justify-content: flex-end;
-      margin-bottom: 95px;
-    }
-  
-    .hire-btn {
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 59px;
-      border: none;
-  
-      padding: 25px 34px;
-  
+  }
+
+  .text {
+    font-family: "Gotham Pro";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 36px;
+
+    color: #000000;
+
+    margin: 0 0 90px;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 95px;
+  }
+
+  .hire-btn {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 59px;
+    border: none;
+
+    padding: 25px 34px;
+
+    font-family: "Gotham Pro";
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 61px;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+
+  .road-wrapper {
+    position: relative;
+    width: 1110px;
+    height: 596px;
+    margin: auto;
+
+    .card {
+      position: absolute;
+      width: 635px;
+      height: 369px;
+      padding: 35px 38px;
+      box-sizing: border-box;
+
+      background: #ffffff;
+      border: 1px solid #000000;
+      border-radius: 76px;
+
       font-family: "Gotham Pro";
       font-weight: 500;
-      font-size: 64px;
-      line-height: 61px;
-      text-transform: uppercase;
-  
-      color: #000000;
+      color: #1a1b1d;
+
+      &-number {
+        font-size: 64px;
+        line-height: 64px;
+        text-transform: uppercase;
+
+        margin: 0 0 15px;
+        display: flex;
+        align-items: flex-start;
+
+        .card-name {
+          display: none;
+          font-size: 24px;
+          line-height: 24px;
+
+          margin-left: 25px;
+          padding-top: 8px;
+        }
+      }
+
+      &-text {
+        display: none;
+        padding-top: 21px;
+
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 19px;
+      }
     }
-  
+
+    .card-1 {
+      top: 0;
+    }
+
+    .card-2 {
+      top: 96px;
+      right: 0;
+
+      z-index: 2;
+    }
+
+    .card-3 {
+      top: 227px;
+      left: 94px;
+
+      z-index: 3;
+    }
+
+    .active-card {
+      background: #b7babf;
+      color: #ffffff;
+
+      transition: color 0.4s linear;
+      transition: background 0.4s linear;
+
+      .card-text,
+      .card-name {
+        display: inline;
+      }
+    }
+
+    .active-card.card-1 {
+      transition: top 0.7s linear;
+      top: -112px;
+    }
+
+    .active-card.card-2 {
+      transition: top 0.7s linear;
+      top: -77px;
+    }
+  }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    padding: 52px 15px 70px;
+
+    .main-text {
+      font-size: 36px;
+      margin-bottom: 27px;
+
+      &:last-of-type {
+        margin-bottom: 47px;
+      }
+    }
+
+    .text {
+      font-size: 18px;
+      line-height: 21px;
+
+      margin-bottom: 27px;
+    }
+
+    .btn-wrapper {
+      margin-bottom: 6 5px;
+    }
+
+    .hire-btn {
+      border-radius: 49px;
+
+      padding: 13px 30px;
+
+      font-size: 25px;
+      line-height: 24px;
+    }
+
     .road-wrapper {
-      position: relative;
-      width: 1110px;
-      height: 596px;
-      margin: auto;
-  
+      width: 100%;
+      height: auto;
+
       .card {
-        position: absolute;
-        width: 635px;
-        height: 369px;
-        padding: 35px 38px;
-        box-sizing: border-box;
-  
-        background: #ffffff;
-        border: 1px solid #000000;
-        border-radius: 76px;
-  
-        font-family: "Gotham Pro";
-        font-weight: 500;
-        color: #1a1b1d;
-  
+        position: initial;
+        width: 330px;
+        height: 270px;
+        padding: 18px 30px;
+        margin-bottom: 15px;
+        border-radius: 46px;
+
         &-number {
-          font-size: 64px;
-          line-height: 64px;
-          text-transform: uppercase;
-  
-          margin: 0 0 15px;
-          display: flex;
-          align-items: flex-start;
-  
+          font-size: 32px;
+          line-height: 31px;
+          align-items: center;
+
           .card-name {
-            display: none;
-            font-size: 24px;
-            line-height: 24px;
-  
-            margin-left: 25px;
-            padding-top: 8px;
+            display: block;
+            font-size: 16px;
+            line-height: 15px;
           }
         }
-  
+
         &-text {
-          display: none;
-          padding-top: 21px;
-  
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 19px;
-        }
-      }
-  
-      .card-1 {
-        top: 0;
-      }
-  
-      .card-2 {
-        top: 96px;
-        right: 0;
-  
-        z-index: 2;
-      }
-  
-      .card-3 {
-        top: 227px;
-        left: 94px;
-  
-        z-index: 3;
-      }
-  
-      .active-card {
-        background: #b7babf;
-        color: #ffffff;
-  
-        transition: color 0.4s linear;
-        transition: background 0.4s linear;
-  
-        .card-text,
-        .card-name {
           display: inline;
+          padding-top: 18px;
+
+          font-size: 14px;
+          line-height: 17px;
         }
-      }
-  
-      .active-card.card-1 {
-        transition: top 0.7s linear;
-        top: -112px;
-      }
-  
-      .active-card.card-2 {
-        transition: top 0.7s linear;
-        top: -77px;
       }
     }
   }
-  
+}

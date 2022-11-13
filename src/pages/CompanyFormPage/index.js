@@ -26,7 +26,7 @@ export const CompanyFormPage = () => {
               className="form-name"
               placeholder="Type Here"
             />
-            <span>and I`m looking for</span>
+            <span>and I'm looking for</span>
             {/* TODO SELECT */}
             <input
               type="text"

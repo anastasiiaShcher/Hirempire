@@ -1,16 +1,22 @@
 import { useState, useEffect } from "react";
+import { useWidthData } from '../../hooks';
 import "./home-companies-block.scss";
 
 export const HomeCompaniesBlock = () => {
-  const [activeCard, setActiveCard] = useState(1);
+  const isMobile = useWidthData();
+
+  const [activeCard, setActiveCard] = useState(isMobile ? 0 : 1);
   const [useInterval, setUseInterval] = useState(true);
 
   const handleClickOnCard = (cardNumber) => {
+    if (isMobile) return;
     setActiveCard(cardNumber);
     setUseInterval(false);
   };
 
   useEffect(() => {
+    if (isMobile) return;
+
     if (useInterval) {
       const interval = setInterval(() => {
         setActiveCard(activeCard === 3 ? 1 : activeCard + 1);

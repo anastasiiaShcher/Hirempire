@@ -40,6 +40,42 @@
       color: black;
     }
   }
+
+  &__burger-wrapper {
+    display: none;
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    height: 80px;
+    padding: 12px 15px;
+    
+    background: rgba(217, 217, 217, 0.14);
+    backdrop-filter: blur(7px);
+    
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      padding-right: 0;
+    }
+    &__list {
+      display: none;
+    }
+
+    &__burger-wrapper {
+      display: block;
+      color: #ffffff;
+
+      outline: none;
+      background: none;
+      border: none;
+    }
+  }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
 }
 
 .header-black {

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { Header } from "../../components/Header";
 import { Carousel } from "../../components/Carousel";
 import { ScrollButton } from "../../components/ScrollBtn";
@@ -6,11 +6,15 @@ import { ContactBlock } from "../../components/ContactBlock";
 import { TalentsList } from "../../components/TalentsList";
 import { HomeCompaniesBlock } from "../../components/HomeCompaniesBlock";
 import {
-  backgroundHome2,
-  imgBlack,
-  imgGrey,
-  backgroundHome4,
+  backgroundAboutUs,
+  backgroundAboutUsMobile,
+  switcherBlack,
+  switcherGrey,
+  switcherMobile,
+  homeFocus,
   hireBackground,
+  hireBackgroundMobileTop,
+  hireBackgroundMobileBottom
 } from "../../imagesContants";
 import "./home.scss";
 
@@ -38,9 +42,14 @@ export const Home = () => {
       </div>
       <div className="about-us-block" ref={ref}>
         <img
-          src={backgroundHome2}
+          src={backgroundAboutUs}
           alt="background-text"
           className="background-img"
+        />
+        <img
+          src={backgroundAboutUsMobile}
+          alt="background-text"
+          className="background-img-mobile"
         />
         <div className="text-block">
           <h2>About us</h2>
@@ -70,6 +79,9 @@ export const Home = () => {
             I’m looking for dream job
           </button>
         </div>
+        <div className="image-mobile-wrapper">
+          <img src={switcherMobile} alt="decoration" className="image-mobile" />
+        </div>
         <div className="main-text-block">
           <span className="text top-text text-big">Fringilla</span>
           <span className="text left-text text-big">dolor</span>
@@ -79,16 +91,20 @@ export const Home = () => {
             hire the best and build your business empire или hire the best and
             turn your business into empire
           </span>
+          <span className="text text-mobile text-small">
+            hire the best and build your business empire или hire the best and
+            turn your business into empire
+          </span>
         </div>
         <span className="button">i'm in</span>
         {lookingTalent ? (
-          <img src={imgGrey} alt="decoration" className="decoration" />
+          <img src={switcherGrey} alt="decoration" className="decoration" />
         ) : (
-          <img src={imgBlack} alt="decoration" className="decoration" />
+          <img src={switcherBlack} alt="decoration" className="decoration" />
         )}
       </div>
       <div className="home-focus">
-        <img src={backgroundHome4} alt="background" />
+        <img src={homeFocus} alt="background" />
         <div className="main-block">
           <h2 className="main-text">Our focus:</h2>
           <ul className="speciality-list">
@@ -155,6 +171,7 @@ export const Home = () => {
             }}
           >
             <svg
+              className="arrow"
               width="70"
               height="70"
               viewBox="0 0 70 70"
@@ -173,6 +190,26 @@ export const Home = () => {
                 strokeWidth="2"
               />
             </svg>
+            <svg
+              className="arrow-mobile"
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="14.5" cy="14.5" r="14.5" fill="#F1F1F1" />
+              <path
+                d="M11.1478 16.973L14.6008 20.426L18.1005 16.9264"
+                stroke="black"
+                strokeWidth="2"
+              />
+              <path
+                d="M14.6016 20.4261V8.57397"
+                stroke="black"
+                strokeWidth="2"
+              />
+            </svg>
           </button>
         </div>
         <hr />
@@ -187,6 +224,8 @@ export const Home = () => {
       </div>
       <div className="hires-block">
         <img src={hireBackground} alt="background" className="backgroung-img" />
+        <img src={hireBackgroundMobileTop} alt="background" className="backgroung-img-mobile-top" />
+        <img src={hireBackgroundMobileBottom} alt="background" className="backgroung-img-mobile-bottom" />
         <div className="content-block">
           <h2 className="article">Latest hires</h2>
           <div className="carousel-block-1">

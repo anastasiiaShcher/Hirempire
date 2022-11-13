@@ -1,5 +1,5 @@
 .hide-block {
-    display: none !important;
+  display: none !important;
 }
 
 .talents-list {
@@ -47,7 +47,7 @@
     .title {
       margin: 0 0 52px;
       font-family: "Gotham Pro";
-      font-weight: 400;
+      font-weight: 500;
       font-size: 20px;
     }
 
@@ -79,6 +79,10 @@
           margin: 0;
         }
 
+        .info-price {
+          display: none;
+        }
+
         .info-title {
           font-size: 16px;
           margin-bottom: 23px;
@@ -102,6 +106,81 @@
       }
     }
   }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    margin-top: 43px;
+
+    flex-direction: column;
+
+    ::-webkit-scrollbar-thumb {
+      display: none;
+    }
+
+    .filters {
+      width: auto;
+      justify-content: initial;
+      flex-wrap: nowrap;
+      overflow: auto;
+
+      label {
+        white-space: nowrap;
+        padding: 10px;
+        margin: 0 10px 43px 0;
+
+        font-size: 14px;
+      }
+    }
+
+    .candidates-list {
+      margin-left: 0px;
+
+      .title {
+        margin-bottom: 22px;
+      }
+
+      .candidates-block {
+        max-height: initial;
+      }
+
+      .candidate {
+        margin-bottom: 16px;
+        flex-direction: column;
+
+        .image {
+          height: 115px;
+          width: 100%;
+          margin-bottom: 16px;
+        }
+
+        .info-block {
+          .info-header {
+            display: flex;
+            justify-content: space-between;
+
+            .info-price {
+              display: block;
+            }
+          }
+
+          .info-price,
+          .info-title,
+          .info-work-type {
+            font-size: 14px;
+            margin-bottom: 12px;
+          }
+        }
+
+        .price {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 // scroll-bar
@@ -113,7 +192,7 @@
 /* Track */
 ::-webkit-scrollbar-track {
   background: none;
-  border-right: 2px solid #B7BABF;
+  border-right: 2px solid #b7babf;
 }
 
 /* Handle */

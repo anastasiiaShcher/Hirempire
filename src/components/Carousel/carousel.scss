@@ -30,6 +30,8 @@
   .carousel-item__company {
     height: 34px;
     margin-bottom: 23px;
+    font-size: 34px;
+    line-height: 34px;
   }
 
   .carousel-item__description {
@@ -42,5 +44,32 @@
     margin: 0;
 
     color: #000000;
+  }
+}
+
+//tablet
+@media screen and (max-width: 1439px) {
+}
+
+//mobile
+@media screen and (max-width: 743px) {
+  .carousel-wrap {
+    width: 100%;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel-seat {
+    height: auto;
+    width: 100%;
+    margin-bottom: 22px;
+
+    .carousel-item__image {
+      height: 162px;
+      width: 100%;
+    }
   }
 }

@@ -30,6 +30,15 @@
         }
       }
     }
+
+    .link-block {
+      display: none;
+      color: #ffffff;
+
+      li a {
+        color: #ffffff;
+      }
+    }
   }
 
   .right-side {
@@ -106,7 +115,7 @@
 
           &:hover {
             transition: 0.5s;
-            color: #A179CF;
+            color: #a179cf;
           }
         }
       }
@@ -116,7 +125,8 @@
   &-grey {
     .left-side {
       background: #ffffff;
-
+      
+      .link-block li a,
       .text-block,
       .text-block span a {
         color: #000000;
@@ -124,10 +134,92 @@
     }
 
     .right-side {
-      background: #B7BABF;
+      background: #b7babf;
 
       .form .btn-wrapper button {
-        background: #FFFFFF;
+        background: #ffffff;
+      }
+    }
+  }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    flex-direction: column-reverse;
+
+    .right-side {
+      padding: 73px 15px 78px;
+
+      .main-article {
+        position: initial;
+
+        max-width: 100%;
+        font-size: 40px;
+
+        span {
+          display: none;
+        }
+      }
+
+      .form {
+        margin-top: 43px;
+
+        .btn-wrapper {
+          justify-content: center;
+          margin-bottom: 0;
+        }
+      }
+
+      .link-block {
+        display: none;
+      }
+    }
+
+    .left-side {
+      width: 100%;
+
+      .left-side-image {
+        width: 100%;
+      }
+
+      .text-block {
+        padding: 20px 15px 23px;
+      }
+
+      .link-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 15px 55px;
+
+        .link-list {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+
+          li {
+            margin-bottom: 24px;
+
+            &:last-of-type {
+              margin-bottom: 0px;
+            }
+
+            a {
+              font-family: "Gotham Pro";
+              font-weight: 400;
+              font-size: 20px;
+              text-decoration: none;
+
+              &:hover {
+                transition: 0.5s;
+                color: #a179cf;
+              }
+            }
+          }
+        }
       }
     }
   }

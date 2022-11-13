@@ -31,4 +31,32 @@
 
     color: #1a1b1d;
   }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    margin: 160px 15px 70px;
+
+    .main-text {
+      font-size: 70px;
+      line-height: 84px;
+
+      margin-bottom: 50px;
+    }
+
+    .addiotional-text {
+      max-width: 100%;
+      margin-bottom: 100px;
+
+      font-size: 14px;
+      line-height: 13px;
+    }
+
+    .back-btn {
+      text-transform: capitalize;
+    }
+  }
 }

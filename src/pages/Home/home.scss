@@ -33,6 +33,29 @@
       margin-left: 100px;
     }
   }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    background: url(../../assets/images/main-background-mobile.png) no-repeat
+      center center;
+    background-size: cover;
+
+    padding: 0 20px 49px;
+
+    .text-block {
+      flex-direction: column;
+      max-width: 130px;
+
+      a {
+        font-size: 14px;
+        margin-left: 0;
+      }
+    }
+  }
 }
 
 .about-us-block {
@@ -53,6 +76,13 @@
     bottom: 23px;
   }
 
+  .background-img-mobile {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
   .text-block {
     z-index: 2;
 
@@ -63,16 +93,49 @@
       line-height: 77px;
       color: #030608;
 
-      margin-bottom: 11px;
+      margin-bottom: 12px;
     }
 
     p {
       margin: 0;
       font-family: "Gotham Pro";
-      font-weight: 400;
+      font-weight: 500;
       font-size: 40px;
       line-height: 52px;
       color: #1a1b1d;
+    }
+  }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    padding: 0 20px 49px;
+    align-items: center;
+
+    .background-img {
+      display: none;
+    }
+
+    .background-img-mobile {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .text-block {
+      h2 {
+        font-size: 32px;
+        line-height: 38px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 21px;
+      }
     }
   }
 }
@@ -158,6 +221,10 @@
       top: 272px;
       right: 0;
     }
+
+    .text-mobile {
+      display: none;
+    }
   }
 
   .button {
@@ -177,6 +244,96 @@
   .decoration {
     z-index: 2;
   }
+
+  .image-mobile-wrapper {
+    display: none;
+  }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    min-height: 869px;
+    padding: 65px 15px 95px;
+
+    .switch-block {
+      flex-direction: column;
+      margin-bottom: 22px;
+
+      button {
+        padding: 0;
+        margin-bottom: 38px;
+
+        font-size: 14px;
+        line-height: 13px;
+        text-underline-offset: 6px;
+      }
+    }
+
+    .image-mobile-wrapper {
+      display: flex;
+      justify-content: center;
+      min-height: 165px;
+      margin-bottom: 40px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .main-text-block {
+      height: 271px;
+      margin-bottom: 50px;
+
+      .text-big {
+        font-size: 40px;
+        line-height: 52px;
+      }
+
+      .left-text {
+        top: 51px;
+        left: 0;
+      }
+
+      .bottom-text {
+        top: 102px;
+        right: 13px;
+      }
+
+      .right-text {
+        display: none;
+      }
+
+      .text-small {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .text-mobile {
+        display: block;
+        position: absolute;
+        top: 218px;
+        left: 0;
+      }
+    }
+
+    .decoration {
+      display: none;
+    }
+
+    .button {
+      position: initial;
+      width: 210px;
+      box-sizing: border-box;
+      padding: 13px 69px;
+      margin: 0 auto;
+
+      font-size: 25px;
+      line-height: 24px;
+    }
+  }
 }
 
 .grey-home {
@@ -195,7 +352,7 @@
     color: #000000;
   }
 
-  img {
+  .decoration {
     position: absolute;
     right: 165px;
   }
@@ -218,7 +375,7 @@
     color: #ffffff;
   }
 
-  img {
+  .decoration {
     position: absolute;
     left: 165px;
   }
@@ -292,6 +449,43 @@
       }
     }
   }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    padding: 27px 15px 60px;
+
+    img {
+      height: 100%;
+    }
+
+    .main-block {
+      .main-text {
+        font-size: 36px;
+        padding: 0 0 64px;
+      }
+
+      li {
+        margin: 0 0 32px;
+      }
+
+      .speciality-list .speciality-item {
+        margin: 0 0 20px;
+
+        span {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 24px;
+          line-height: 23px;
+        }
+      }
+    }
+  }
 }
 
 .home-talents {
@@ -320,6 +514,10 @@
       &:hover {
         color: #a179cf;
       }
+
+      .arrow-mobile {
+        display: none;
+      }
     }
   }
 
@@ -337,6 +535,39 @@
 
     color: #ffffff;
   }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    padding: 41px 15px 64px;
+
+    .page-header {
+      font-size: 32px;
+      line-height: 38px;
+
+      .open-btn {
+        .arrow-mobile {
+          display: block;
+        }
+
+        .arrow {
+          display: none;
+        }
+      }
+    }
+
+    hr {
+      margin-bottom: 33px;
+    }
+
+    .text {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
 }
 
 .hires-block {
@@ -353,6 +584,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 1091px;
+  }
+
+  .backgroung-img-mobile-top,
+  .backgroung-img-mobile-bottom {
+    display: none;
   }
 
   .content-block {
@@ -381,9 +617,61 @@
       margin-bottom: 90px;
     }
   }
+
+  //tablet
+  @media screen and (max-width: 1439px) {
+  }
+
+  //mobile
+  @media screen and (max-width: 743px) {
+    height: auto;
+    background: #b7babf;
+
+    .backgroung-img {
+      display: none;
+    }
+
+    .backgroung-img-mobile-top {
+      display: block;
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      height: 230px;
+    }
+
+    .backgroung-img-mobile-bottom {
+      display: block;
+      z-index: 2;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .content-block {
+      max-width: 100%;
+      padding: 243px 15px 217px;
+
+      .article {
+        font-size: 32px;
+        line-height: 38px;
+        text-align: start;
+        margin-bottom: 46px;
+      }
+
+      .carousel-block-1 {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .rotate {
   transform: rotate(180deg);
 }
 
+// //tablet
+// @media screen and (max-width: 1439px) {
+// }
+
+// //mobile
+// @media screen and (max-width: 743px) {
+// }

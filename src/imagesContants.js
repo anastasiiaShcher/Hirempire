@@ -1,19 +1,27 @@
-import backgroundHome2 from "./assets/images/home-2.png";
-import imgBlack from "./assets/images/home-switcher-black.png";
-import imgGrey from "./assets/images/home-switcher-grey.png";
-import backgroundHome4 from "./assets/images/home-4.png";
+import backgroundAboutUs from "./assets/images/about-us.png";
+import backgroundAboutUsMobile from "./assets/images/about-us-mobile.png";
+import switcherBlack from "./assets/images/home-switcher-black.png";
+import switcherGrey from "./assets/images/home-switcher-grey.png";
+import switcherMobile from "./assets/images/home-switcher-mobile.png";
+import homeFocus from "./assets/images/home-focus.png";
 import hireBackground from "./assets/images/hires-background.jpg";
+import hireBackgroundMobileTop from "./assets/images/hires-background-mobile-top.png";
+import hireBackgroundMobileBottom from "./assets/images/hires-background-mobile-bottom.png";
 import contactBlockImg from "./assets/images/contact-block.png";
 import logoSmall from "./assets/images/logo-small.png";
 import logo from "./assets/images/logo.png";
 import candidatesMain from "./assets/images/candidates-main.png";
 
 export {
-  backgroundHome2,
-  imgBlack,
-  imgGrey,
-  backgroundHome4,
+  backgroundAboutUs,
+  backgroundAboutUsMobile,
+  switcherBlack,
+  switcherGrey,
+  switcherMobile,
+  homeFocus,
   hireBackground,
+  hireBackgroundMobileTop,
+  hireBackgroundMobileBottom,
   contactBlockImg,
   logoSmall,
   logo,

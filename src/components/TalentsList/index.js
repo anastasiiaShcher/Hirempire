@@ -17,7 +17,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
-    id: '1'
+    id: "1",
   },
   {
     sphere: "Finance & Accounting",
@@ -26,7 +26,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
-    id: '2'
+    id: "2",
   },
   {
     sphere: "Finance & Accounting",
@@ -35,7 +35,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
-    id: '3'
+    id: "3",
   },
   {
     sphere: "Finance & Accounting",
@@ -44,7 +44,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
-    id: '4'
+    id: "4",
   },
   {
     sphere: "Finance & Accounting",
@@ -53,7 +53,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
-    id: '5'
+    id: "5",
   },
   {
     sphere: "Legal",
@@ -62,7 +62,7 @@ const candidates = [
     location: "Irvine,  California,  USA",
     days: "0",
     price: "800$",
-    id: '6'
+    id: "6",
   },
 ];
 
@@ -76,7 +76,10 @@ export const TalentsList = ({ isHide }) => {
         <div className="candidate" key={candidate.id}>
           <div className="image"></div>
           <div className="info-block">
-            <p className="info-title">{candidate.title}</p>
+            <div className="info-header">
+              <p className="info-title">{candidate.title}</p>{" "}
+              <p className="info-price">{candidate.price}</p>
+            </div>
             <p className="info-work-type">{candidate.workTimeType}</p>
             <p className="info-footer">
               <span>{candidate.location}</span>
@@ -87,7 +90,7 @@ export const TalentsList = ({ isHide }) => {
         </div>
       ));
 
-      return result.length ? result : 'No result';
+    return result.length ? result : "No result";
   }, [activeTitle, candidates]);
 
   return (
