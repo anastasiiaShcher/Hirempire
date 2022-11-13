@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./header.scss";
 import { logo } from "../../imagesContants";
@@ -6,21 +6,21 @@ import { logo } from "../../imagesContants";
 export const Header = ({ isBlack }) => {
   return (
     <div className={`${isBlack ? "header header-black" : "header"}`}>
-      <Link to="/" className="header__logo">
+      <NavLink to="/" className="header__logo">
         <img src={logo} alt="logo" />
-      </Link>
+      </NavLink>
       <ul className="header__list">
         <li className="header__list-item">
-          <Link to="/">Home</Link>
+          <NavLink to="/" end className={(navData) => (navData.isActive ? "selected" : 'none')}>Home</NavLink>
         </li>
         <li className="header__list-item">
-          <Link to="/company">companies</Link>
+          <NavLink to="/company" className={(navData) => (navData.isActive ? "selected-company" : 'none')}>companies</NavLink>
         </li>
         <li className="header__list-item">
-          <Link to="/candidate">candidates</Link>
+          <NavLink to="/candidate" className={(navData) => (navData.isActive ? "selected" : 'none')}>candidates</NavLink>
         </li>
         <li className="header__list-item">
-          <a link="">account</a>
+          <NavLink to="/account" className={(navData) => (navData.isActive ? "selected" : 'none')}>account</NavLink>
         </li>
       </ul>
       <button className="header__burger-wrapper">

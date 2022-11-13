@@ -85,7 +85,7 @@ export const CompanyFormPage = () => {
               setIsCheckedRules(!isCheckedRules);
             }}
           />
-          <span class="checkmark"></span>
+          <span className="checkmark"></span>
           <span>
             By submitting your email you agree that Kelly may send you
             promotional email messages, updates, and other marketing messages.

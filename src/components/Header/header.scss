@@ -30,14 +30,21 @@
     li a {
       color: #ffffff;
       text-decoration: none;
+
+      &.selected {
+        color: #9f67ff;
+      }
+
+      &.selected-company {
+        color: #8944FF;
+      }
     }
 
     li:hover a {
       transition: 0.5s;
 
       cursor: pointer;
-      // color: #a179cf;
-      color: black;
+      color: rgba(255, 255, 255, 0.5);
     }
   }
 
@@ -49,10 +56,10 @@
   @media screen and (max-width: 743px) {
     height: 80px;
     padding: 12px 15px;
-    
+
     background: rgba(217, 217, 217, 0.14);
     backdrop-filter: blur(7px);
-    
+
     justify-content: space-between;
     align-items: center;
 
