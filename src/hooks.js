@@ -13,7 +13,7 @@ export const useWidthData = () => {
     };
   }, []);
 
-  const isMobile = useMemo(() => width <= 743, [width]);
+  const isMobile = useMemo(() => width <= 640, [width]);
 
   return isMobile;
 };

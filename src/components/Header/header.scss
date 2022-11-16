@@ -20,6 +20,7 @@
     display: flex;
     flex: 1;
     justify-content: space-between;
+    padding: 0;
 
     list-style-type: none;
     text-transform: uppercase;
@@ -36,7 +37,7 @@
       }
 
       &.selected-company {
-        color: #8944FF;
+        color: #8944ff;
       }
     }
 
@@ -52,8 +53,27 @@
     display: none;
   }
 
+  //tablet
+  @media screen and (max-width: 1439px) {
+    height: 117px;
+    padding: 27px 35px;
+    align-items: center;
+
+    backdrop-filter: blur(19.5px);
+
+    &__logo {
+      padding-right: 0;
+      flex: 1;
+    }
+
+    &__list {
+      width: 430px;
+      flex: none;
+    }
+  }
+
   //mobile
-  @media screen and (max-width: 743px) {
+  @media screen and (max-width: 640px) {
     height: 80px;
     padding: 12px 15px;
 
@@ -78,10 +98,6 @@
       background: none;
       border: none;
     }
-  }
-
-  //tablet
-  @media screen and (max-width: 1439px) {
   }
 }
 

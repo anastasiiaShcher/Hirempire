@@ -265,7 +265,7 @@
   }
 
   //mobile
-  @media screen and (max-width: 743px) {
+  @media screen and (max-width: 640px) {
     padding: 0 15px;
     box-sizing: border-box;
     max-width: 100%;
@@ -320,7 +320,10 @@
 
           textarea {
             font-size: 10px;
-            line-height: 10px;
+            line-height: 41px;
+
+            background-image: linear-gradient(transparent, transparent calc(41px - 1px), #000000 0px);
+            background-size: 100% 41px;
           }
         }
       }
@@ -366,7 +369,8 @@
         
         .info-item {
           margin-bottom: 40px;
-
+          align-items: center;
+          
           p {
             margin-bottom: 10px;
           }
