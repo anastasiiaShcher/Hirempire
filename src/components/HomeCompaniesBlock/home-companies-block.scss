@@ -144,7 +144,76 @@
   }
 
   //tablet
-  @media screen and (max-width: 1439px) {
+    @media screen and (min-width: 641px) and (max-width: 1439px) {    padding: 97px 27px 81px;
+
+    .main-text {
+      font-size: 48px;
+
+      margin: 0 0 56px;
+
+      &:last-of-type {
+        margin: 0 0 136px;
+      }
+    }
+
+    .text {
+      font-size: 32px;
+      line-height: 120%;
+
+      margin: 0 0 54px;
+    }
+
+    .btn-wrapper {
+      margin-bottom: 56px;
+    }
+
+    .hire-btn {
+      border-radius: 49px;
+
+      padding: 14px 34px;
+
+      font-size: 48px;
+      line-height: 46px;
+    }
+
+    .road-wrapper {
+      width: 100%;
+      height: 550px;
+
+      .card {
+        width: 64%;
+        height: 325px;
+        padding: 24px 38px;
+
+        border-radius: 50px;
+
+        &-number {
+          font-size: 48px;
+          line-height: 46px;
+
+          margin: 0 0 7px;
+
+          .card-name {
+            font-size: 18px;
+            line-height: 18px;
+
+            margin-left: 18px;
+          }
+        }
+
+        &-text {
+          padding-top: 14px;
+
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      .active-card.card-1 {
+        top: -136px;
+      }
+  
+    }
   }
 
   //mobile

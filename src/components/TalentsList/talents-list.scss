@@ -29,6 +29,7 @@
       font-family: "Gotham Pro";
       font-weight: 400;
       font-size: 20px;
+      text-align: center;
 
       color: #ffffff;
     }
@@ -108,7 +109,70 @@
   }
 
   //tablet
-  @media screen and (max-width: 1439px) {
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    margin-top: 34px;
+
+    .filters {
+      width: 50%;
+      justify-content: initial;
+
+      label {
+        padding: 12px 20px;
+        font-size: 16px;
+        margin-right: 8px;
+      }
+    }
+
+    .candidates-list {
+      margin-left: 43px;
+
+      .candidates-block {
+        max-height: 100%;
+      }
+
+      .candidate {
+        margin-bottom: 17px;
+
+        .image {
+          width: 95px;
+          height: 115px;
+
+          margin-right: 31px;
+        }
+
+        .info-block {
+          .info-header {
+            display: flex;
+            justify-content: space-between;
+
+            .info-price {
+              display: block;
+            }
+          }
+
+          .info-title {
+            font-size: 14px;
+            line-height: 13px;
+
+            margin-bottom: 12px;
+          }
+
+          .info-price,
+          .info-work-type {
+            font-size: 10px;
+            line-height: 10px;
+          }
+
+          .info-footer {
+            font-size: 8px;
+          }
+        }
+
+        .price {
+          display: none;
+        }
+      }
+    }
   }
 
   //mobile
