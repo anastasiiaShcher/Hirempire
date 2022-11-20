@@ -35,7 +35,8 @@
   }
 
   //tablet
-    @media screen and (min-width: 641px) and (max-width: 1439px) {    background: url(../../assets/images/main-background-mobile.png) no-repeat
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    background: url(../../assets/images/main-background-mobile.png) no-repeat
       center center;
     background-size: cover;
 
@@ -123,7 +124,8 @@
   }
 
   //tablet
-    @media screen and (min-width: 641px) and (max-width: 1439px) {    padding: 0 27px 56px;
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    padding: 0 27px 56px;
     align-items: center;
 
     .background-img {
@@ -285,7 +287,8 @@
   }
 
   //tablet
-    @media screen and (min-width: 641px) and (max-width: 1439px) {    height: auto;
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    height: auto;
     min-height: 783px;
     padding: 87px 27px 120px;
 
@@ -452,7 +455,8 @@
     right: 165px;
 
     //tablet
-      @media screen and (min-width: 641px) and (max-width: 1439px) {      right: 25px;
+    @media screen and (min-width: 641px) and (max-width: 1439px) {
+      right: 25px;
     }
   }
 }
@@ -479,7 +483,8 @@
     left: 165px;
   }
 
-    @media screen and (min-width: 641px) and (max-width: 1439px) {    //TODO
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    //TODO
     .button {
       right: 25px;
     }
@@ -561,7 +566,8 @@
   }
 
   //tablet
-    @media screen and (min-width: 641px) and (max-width: 1439px) {    padding: 44px 27px;
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    padding: 44px 27px;
     overflow: hidden;
 
     img {
@@ -681,7 +687,8 @@
   }
 
   //tablet
-    @media screen and (min-width: 641px) and (max-width: 1439px) {    padding: 46px 27px 64px;
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    padding: 46px 27px 64px;
 
     .page-header {
       margin-bottom: 30px;
@@ -758,7 +765,6 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding: 118px 165px 0;
-    position: relative;
 
     .article {
       font-family: "Monument Extended";
@@ -780,6 +786,28 @@
 
   //tablet
   @media screen and (max-width: 1440px) {
+    height: auto;
+
+    .backgroung-img {
+      height: 100%;
+    }
+
+    .content-block {
+      max-width: 100%;
+      padding: 46px 36px 65px;
+
+      .article {
+        font-size: 48px;
+        line-height: 58px;
+
+        margin: 0 0 27px;
+      }
+
+      .carousel-block-1 {
+        margin-bottom: 47px;
+        margin-right: 130px;
+      }
+    }
   }
 
   //mobile
@@ -827,10 +855,3 @@
 .rotate {
   transform: rotate(180deg);
 }
-
-// //tablet
-//   @media screen and (min-width: 641px) and (max-width: 1439px) {// }
-
-// //mobile
-// @media screen and (max-width: 640px) {
-// }

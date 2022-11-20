@@ -1,5 +1,5 @@
 .thank-you-block {
-  margin: 304px 165px 0;
+  margin: 304px 165px 40px;
   background: #ffffff;
 
   display: flex;
@@ -33,7 +33,21 @@
   }
 
   //tablet
-    @media screen and (min-width: 641px) and (max-width: 1439px) {  }
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    margin: 222px 27px 40px;
+
+    .main-text {
+      font-size: 84px;
+      line-height: 101px;
+    }
+
+    .addiotional-text {
+      margin: 0 0 90px;
+
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 
   //mobile
   @media screen and (max-width: 640px) {
