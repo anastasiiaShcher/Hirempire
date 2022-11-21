@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { useWidthData } from '../../hooks';
+import { useWidthData } from "../../hooks";
 import "./home-companies-block.scss";
 
 export const HomeCompaniesBlock = () => {
-  const isMobile = useWidthData();
+  const { isMobile } = useWidthData();
 
   const [activeCard, setActiveCard] = useState(isMobile ? 0 : 1);
   const [useInterval, setUseInterval] = useState(true);

@@ -38,10 +38,11 @@
     }
 
     .form {
+      margin-bottom: 115px;
+
       font-weight: 500;
       font-size: 32px;
       line-height: 64px;
-      margin-bottom: 115px;
 
       div {
         display: flex;
@@ -105,9 +106,7 @@
           line-height: 64px;
           outline: none;
           border: none;
-          // border-bottom: 1px solid #000000;
 
-          // line-height: 4ch;
           background-image: linear-gradient(
             transparent,
             transparent calc(64px - 1px),
@@ -261,7 +260,99 @@
   }
 
   //tablet
-    @media screen and (min-width: 641px) and (max-width: 1439px) {  }
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    padding: 0 27px;
+    box-sizing: border-box;
+    max-width: 100%;
+
+    .candidates-form {
+      width: 100%;
+
+      .title-wrapper {
+        padding-top: 200px;
+        padding-bottom: 79px;
+
+        .main-text {
+          font-size: 48px;
+        }
+
+        .text {
+          width: 50%;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      .form {
+        margin-bottom: 79px;
+
+        font-size: 24px;
+        line-height: 42px;
+
+        input {
+          font-size: 16px;
+          line-height: 15px;
+          padding: 5px 0;
+        }
+
+        .form-new-line {
+          margin-top: 50px;
+
+          textarea {
+            font-size: 16px;
+            line-height: 42px;
+
+            background-image: linear-gradient(
+              transparent,
+              transparent calc(42px - 1px),
+              #000000 0px
+            );
+            background-size: 100% 42px;
+          }
+        }
+      }
+    }
+
+    .candidates-form-bottom {
+      padding: 0 27px;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0 auto 66px;
+
+      button {
+        padding: 14px 28px;
+        font-size: 36px;
+      }
+
+      .checkbox span {
+        font-size: 10px;
+        line-height: 15px;
+      }
+    }
+
+    .candidates-info {
+      padding: 0 27px;
+      box-sizing: border-box;
+      width: 100%;
+
+      margin: 0 auto 150px;
+
+      .info-list .info-item {
+        p {
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        span {
+          width: auto;
+          padding: 0 10px;
+
+          font-size: 10px;
+          line-height: 10px;
+        }
+      }
+    }
+  }
 
   //mobile
   @media screen and (max-width: 640px) {
@@ -321,7 +412,11 @@
             font-size: 10px;
             line-height: 41px;
 
-            background-image: linear-gradient(transparent, transparent calc(41px - 1px), #000000 0px);
+            background-image: linear-gradient(
+              transparent,
+              transparent calc(41px - 1px),
+              #000000 0px
+            );
             background-size: 100% 41px;
           }
         }
@@ -365,11 +460,11 @@
 
       .info-list {
         flex-direction: column;
-        
+
         .info-item {
           margin-bottom: 40px;
           align-items: center;
-          
+
           p {
             margin-bottom: 10px;
           }

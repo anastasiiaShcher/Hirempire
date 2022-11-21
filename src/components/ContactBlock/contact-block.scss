@@ -149,6 +149,9 @@
 
   //tablet
   @media screen and (min-width: 641px) and (max-width: 1439px) {
+    width: 100%;
+    overflow-x: hidden;
+
     .left-side {
       width: 45%;
 

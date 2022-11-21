@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo } from "react";
 
 export const useWidthData = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -14,6 +14,7 @@ export const useWidthData = () => {
   }, []);
 
   const isMobile = useMemo(() => width <= 640, [width]);
+  const isTablet = useMemo(() => width > 640 && width < 1440, [width]);
 
-  return isMobile;
+  return { isMobile, isTablet };
 };

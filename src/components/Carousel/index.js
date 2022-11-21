@@ -1,11 +1,11 @@
-import { useWidthData } from '../../hooks';
+import { useWidthData } from "../../hooks";
 import "./carousel.scss";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 export const Carousel = () => {
-  const isMobile = useWidthData();
+  const { isMobile } = useWidthData();
 
   const options = {
     loop: true,

@@ -51,7 +51,26 @@
   }
 
   //tablet
-    @media screen and (min-width: 641px) and (max-width: 1439px) {  }
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    padding-bottom: 76px;
+
+    .main-title {
+      padding: 0 27px;
+      max-width: 100%;
+
+      font-size: 64px;
+      line-height: 120%;
+    }
+
+    .main-page-bottom-part {
+      bottom: 76px;
+      right: 27px;
+
+      .text {
+        font-size: 20px;
+      }
+    }
+  }
 
   //mobile
   @media screen and (max-width: 640px) {
@@ -219,7 +238,58 @@
   }
 
   //tablet
-    @media screen and (min-width: 641px) and (max-width: 1439px) {  }
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    .background-text {
+      width: 100%;
+      height: auto;
+
+      font-size: 48px;
+      line-height: 149%;
+
+      &-top {
+        left: 0;
+      }
+
+      &-bottom {
+        bottom: 0;
+      }
+    }
+
+    .hire-form-wrapper {
+      padding: 112px 27px 73px;
+
+      .hire-form {
+        padding: 40px 0 44px;
+
+        .title {
+          margin-bottom: 32px;
+          font-size: 40px;
+        }
+
+        .input-wrapper {
+          width: 100%;
+          padding: 0 30px;
+          box-sizing: border-box;
+
+          .input-item input {
+            font-size: 16px;
+          }
+        }
+
+        .button-wrapper {
+          width: 100%;
+          padding: 0 30px;
+          box-sizing: border-box;
+
+          button {
+            padding: 12px 20px;
+
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
 
   //mobile
   @media screen and (max-width: 640px) {
@@ -361,7 +431,41 @@
   }
 
   //tablet
-    @media screen and (min-width: 641px) and (max-width: 1439px) {  }
+  @media screen and (min-width: 641px) and (max-width: 1439px) {
+    padding: 0 27px 80px;
+    max-width: 100%;
+
+    .main-text {
+      display: inline;
+      font-size: 48px;
+      line-height: 120%;
+
+      &-right {
+        position: initial;
+      }
+    }
+
+    .additional-text {
+      margin-top: 30px;
+      position: initial;
+      font-size: 22px;
+      line-height: 24px;
+
+      &-first,
+      &-second {
+        width: 100%;
+      }
+
+      &-second {
+        margin-bottom: 30px;
+      }
+    }
+
+    .hire-link {
+      position: initial;
+      font-size: 19px;
+    }
+  }
 
   //mobile
   @media screen and (max-width: 640px) {
@@ -375,8 +479,7 @@
       text-transform: capitalize;
 
       &-right {
-        position: inherit;
-        left: 0;
+        position: initial;
       }
     }
 
@@ -389,9 +492,6 @@
       &-first,
       &-second {
         width: 100%;
-
-        top: 0;
-        left: 0;
       }
 
       &-second {
@@ -401,7 +501,6 @@
 
     .hire-link {
       position: initial;
-      bottom: initial;
       font-size: 19px;
     }
   }

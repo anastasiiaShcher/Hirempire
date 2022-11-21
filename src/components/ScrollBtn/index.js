@@ -2,7 +2,7 @@ import { useWidthData } from "../../hooks";
 import "./button.scss";
 
 export const ScrollButton = ({ refVariable }) => {
-  const isMobile = useWidthData();
+  const { isMobile } = useWidthData();
 
   const handleClick = () => {
     refVariable.current?.scrollIntoView({ behavior: "smooth" });

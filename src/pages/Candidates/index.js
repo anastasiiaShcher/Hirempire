@@ -2,7 +2,11 @@ import { useRef } from "react";
 
 import { Header } from "../../components/Header";
 import { useWidthData } from "../../hooks";
-import { SearchIcon, SeacrchIconMobile } from "../../components/SearchIcon";
+import {
+  SearchIcon,
+  SearchIconMobile,
+  SearchIconTablet,
+} from "../../components/SearchIcon";
 import { ScrollButton } from "../../components/ScrollBtn";
 import { ContactBlock } from "../../components/ContactBlock";
 
@@ -10,7 +14,7 @@ import "./candidates.scss";
 
 export const Candidates = () => {
   const ref = useRef(null);
-  const isMobile = useWidthData();
+  const { isMobile, isTablet } = useWidthData();
 
   return (
     <>
@@ -34,7 +38,9 @@ export const Candidates = () => {
             <p className="title">Find Your Next Job</p>
             <div className="input-wrapper">
               <label className="input-item">
-                <SearchIcon />
+                {isMobile && <SearchIconMobile />}
+                {isTablet && <SearchIconTablet />}
+                {!isMobile && !isTablet && <SearchIcon />}
                 <input
                   type="text"
                   placeholder="Job Tittle, Skills or Keywords"
@@ -44,7 +50,9 @@ export const Candidates = () => {
                 <span className="vertical-line"></span>
               </div>
               <label className="input-item">
-                {!isMobile ? <SearchIcon /> : <SeacrchIconMobile />}
+                {isMobile && <SearchIconMobile />}
+                {isTablet && <SearchIconTablet />}
+                {!isMobile && !isTablet && <SearchIcon />}
                 <input type="text" placeholder="City, State, Zip Code" />
               </label>
             </div>

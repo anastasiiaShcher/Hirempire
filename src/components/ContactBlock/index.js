@@ -124,7 +124,7 @@ export const ContactBlock = ({ isRightGrey }) => (
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_294_1721)">
+              <g clipPath="url(#clip0_294_1721)">
                 <path
                   d="M46.3657 7.41333H44.8088L44.7119 14.4861H46.322L46.3657 7.41333Z"
                   fill="black"
